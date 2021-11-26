@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: xilosa;
+    src: url('../fontes/xilosa_.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* ===== CORES ====== */
+    --cor01: #48E0B3;
+    --cor02: #65C7C2;
+    --cor03: #F76D6D;
+    --cor04: #FFDEAD;
+    --cor05: #fff;
+    --cor06: #000;
+
+    /* ===== FONTES ===== */
+    --fonte-normal: 'Poppins', sans-serif;
+    --fonte-estilo: 'xilosa', cursive;
+}
+
+* {
+    font-family: var(--fonte-normal);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-weight: bold;
+    color: var(--cor05);
+}
+
+a:hover {
+    color: var(--cor04);
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    color: var(--cor05);
+    background-color: var(--cor06);
+    margin-bottom: 3em;
+    padding: 3em;
+}
+
+header > h1 {
+    font-family: var(--fonte-estilo);
+    font-size: 5em;
+    margin-bottom: 0.25em;
+}
+header > p {
+    font-family: var(--fonte-normal);
+}
+
+section {
+    display: inline-block;
+    border-radius: 0.15em;
+    margin: 1em;
+    padding: 1em 0.5em;
+    font-size: 2em;
+}
+
+section:nth-child(1) {
+    background-color: var(--cor01);
+}
+
+section:nth-child(2) {
+    background-color: var(--cor02);
+}
+
+section:nth-child(3) {
+    background-color: var(--cor03);
+}
+
+section:nth-child(4) {
+    background-color: var(--cor04);
+}
+
+section:nth-child(5) {
+    color: var(--cor05);
+    background-color: var(--cor06);
+}
+
+section:nth-child(6) {
+    background-color: var(--cor01);
+}
+
+section:nth-child(7) {
+    background-color: var(--cor02);
+}
+
+section > p {
+    margin: 1em;
+    font-family: var(--fonte-estilo);
+}
+
+footer {
+    color: var(--cor05);
+    background-color: var(--cor06);
+    margin-top: 3em;
+    padding: 1em;
+    text-align: center;
+}
