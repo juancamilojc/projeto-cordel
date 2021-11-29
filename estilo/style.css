@@ -38,15 +38,6 @@ a:hover {
     
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
 header {
     text-align: center;
     color: var(--cor05);
@@ -65,13 +56,19 @@ header > p {
 }
 
 section {
-    display: inline-block;
-    border-radius: 0.15em;
-    margin: 1em;
+    margin-bottom: 1em;
     padding: 1em 0.5em;
     font-size: 2em;
 }
 
+#image {
+    background-image: url('imagens/emojis01.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*
 section:nth-child(1) {
     background-color: var(--cor01);
 }
@@ -100,7 +97,7 @@ section:nth-child(6) {
 section:nth-child(7) {
     background-color: var(--cor02);
 }
-
+*/
 section > p {
     margin: 1em;
     font-family: var(--fonte-estilo);
