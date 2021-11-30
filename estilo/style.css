@@ -61,7 +61,7 @@ section {
     font-size: 2em;
 }
 
-#image {
+section#image01 {
     background-image: url('imagens/emojis01.jpg');
     background-repeat: no-repeat;
     background-position: right center;
