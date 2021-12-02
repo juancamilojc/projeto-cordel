@@ -14,7 +14,7 @@
     --cor03: #F76D6D;
     --cor04: #FFDEAD;
     --cor05: #fff;
-    --cor06: #000;
+    --cor06: #141414;
 
     /* ===== FONTES ===== */
     --fonte-normal: 'Poppins', sans-serif;
@@ -22,20 +22,13 @@
 }
 
 * {
-    font-family: var(--fonte-normal);
-    text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
-a {
-    font-weight: bold;
-    color: var(--cor05);
-}
-
-a:hover {
-    color: var(--cor04);
-    
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor05);
 }
 
 header {
@@ -47,60 +40,48 @@ header {
 }
 
 header > h1 {
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
     font-family: var(--fonte-estilo);
     font-size: 5em;
     margin-bottom: 0.25em;
 }
-header > p {
+
+header p, footer p {
     font-family: var(--fonte-normal);
 }
 
-section {
-    margin-bottom: 1em;
-    padding: 1em 0.5em;
-    font-size: 2em;
-}
-
-section#image01 {
-    background-image: url('imagens/emojis01.jpg');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-/*
-section:nth-child(1) {
-    background-color: var(--cor01);
-}
-
-section:nth-child(2) {
-    background-color: var(--cor02);
-}
-
-section:nth-child(3) {
-    background-color: var(--cor03);
-}
-
-section:nth-child(4) {
-    background-color: var(--cor04);
-}
-
-section:nth-child(5) {
+header a, footer a {
+    font-weight: bold;
+    text-decoration: none;
     color: var(--cor05);
-    background-color: var(--cor06);
 }
 
-section:nth-child(6) {
-    background-color: var(--cor01);
+header a:hover, footer a:hover {
+    color: var(--cor04);   
 }
 
-section:nth-child(7) {
-    background-color: var(--cor02);
-}
-*/
-section > p {
-    margin: 1em;
+section {
+    padding: 10vh 2em;
     font-family: var(--fonte-estilo);
+    font-size: 1.75em;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: var(--cor05);
+    color: var(--cor06);
+}
+
+section.imagem {
+    background-color: var(--cor04);
+    color: var(--cor06);
+}
+
+section.imagem > p {
+    background-color: var(--cor03);
+    padding: 0.75em;
+    width: 400px;
 }
 
 footer {
