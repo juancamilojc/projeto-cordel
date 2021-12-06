@@ -40,7 +40,6 @@ header {
 }
 
 header > h1 {
-    /*text-transform: uppercase;*/
     font-variant: small-caps;
     font-family: var(--fonte-estilo);
     font-size: 5em;
@@ -68,6 +67,10 @@ section {
     line-height: 2em;
 }
 
+section > p {
+    padding: 1em;
+}
+
 section.normal {
     background-color: var(--cor05);
     color: var(--cor06);
@@ -75,13 +78,27 @@ section.normal {
 
 section.imagem {
     background-color: var(--cor04);
+    background-size: cover;
+    background-attachment: fixed;
     color: var(--cor06);
+    box-shadow: inset 5px 5px 10px #1414162f;
 }
 
 section.imagem > p {
     display: inline-block;
-    background-color: var(--cor03);
-    padding: 0.5em;
+    background-color: #141416c0;
+    color: var(--cor05);
+    padding: 1em;
+    border-radius: 0.15em;
+}
+
+section#img01 {
+    background-image: url('../imagens/emojis01.jpg');
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 footer {
